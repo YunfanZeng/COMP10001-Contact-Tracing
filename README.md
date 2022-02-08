@@ -1,4 +1,4 @@
-**COMPILED PROJECT FOR COMP10001 COVID CONTACT TRACING**
+# **COMP10001 Contact Tracing**
 
 The functions uses a *visit* 7-tuple: <br/>
 `("Irene", "Skylabs", 3, 9, 15, 13, 45)` <br/>
