@@ -21,7 +21,7 @@ A sample of this is:
 ```
 This list of *visits* can be uncommented on line 19-31
 
-**Forward Tracing:**<br/>
+## **Forward Tracing:**<br/>
 This function dentifies all potential contacts of a detected index case that occurred after the time that they were detected:<br/>
 `forward_contact_trace(visits, 'Russel', (1, 9, 0))`<br/>
 This identifies the potential contacts of Russel using *visits* if he was infected at 9:00am on the first day of the outbreak.
@@ -49,12 +49,12 @@ The reasoning follows the previous; however:
 
 > Source: University of Melbourne COMP10001
 
-**Backward Tracing**<br/>
+## **Backward Tracing**<br/>
 Backward contact tracing identifies the potential source of the index case's infection by looking back through their recent contact history. <br/>
 `backward_contact_trace(visits, 'Natalya', (4, 13, 0), 1)`<br/>
 This means Natalya was detected at 1:00pm on day 4 of the outbreak, and we want to know who she could have been infected by earlier on the same day (as window=1).
 The expected output is:<br/>
-`['Chihiro']`
+`['Chihiro']`<br/>
 The reasoning is as follows:
 
 * Natalya was detected at 1pm on day 4 of the outbreak, and we want to know who she could have been infected by earlier on the same day (as window=1).
